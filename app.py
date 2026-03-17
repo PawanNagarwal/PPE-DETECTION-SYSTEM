@@ -16,7 +16,7 @@ from google import genai
 from google.genai import types
 
 # ------------------ CONFIG ------------------
-st.set_page_config(page_title="PPE Compliance Analysis", layout="wide", page_icon="🦺")
+st.set_page_config(page_title="AI SAFETY ANALYSIS OF CONSTRUCTIONS | AI-powered site safety monitoring system", layout="wide", page_icon="🦺")
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 # GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -678,8 +678,8 @@ def render_video_visualizations(result: dict):
 # ======================================================
 st.markdown("""
 <div style="border-bottom:1px solid rgba(128,128,128,0.2);padding-bottom:14px;margin-bottom:20px;">
-    <div class="main-title">🦺 PPE Compliance Analysis</div>
-    <div class="main-subtitle">AI-powered construction site safety monitoring</div>
+    <div class="main-title">AI SAFETY ANALYSIS OF CONSTRUCTIONS</div>
+    <div class="main-subtitle">AI-powered site safety monitoring system</div>
 </div>
 """, unsafe_allow_html=True)
 
