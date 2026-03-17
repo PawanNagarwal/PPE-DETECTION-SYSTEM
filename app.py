@@ -9,6 +9,7 @@ import tempfile
 from datetime import datetime
 import plotly.graph_objects as go
 import pandas as pd
+import cv2
 
 
 from google import genai
