@@ -525,7 +525,7 @@ def analyze_video_with_gemini(video_bytes: bytes, context: str = "",
                 time.sleep(wait)
             else:
                 raise e
-    raise Exception("Gemini video analysis failed after maximum retries.")
+    raise Exception("video analysis failed after maximum retries.")
 
 
 def analyze_frame_with_gemini_bbox(frame_bytes: bytes, timestamp: str) -> dict:
@@ -920,8 +920,8 @@ with tab_video:
                 try:
                     result_video = analyze_video_with_gemini(video_bytes, vid_context, detail_level)
                 except Exception as e:
-                    st.error(f"❌ Gemini video analysis failed after all retries: {e}")
-                    st.info("💡 Gemini 2.5 Pro is under high demand. Please wait 1–2 minutes and try again.")
+                    st.error(f"❌ video analysis failed after all retries: {e}")
+                    st.info("💡 Model is under high demand. Please wait 1–2 minutes and try again.")
                     st.stop()
 
             # ── Pass 2: Extract flagged frames & get precise bboxes ──
@@ -969,7 +969,7 @@ with tab_video:
             st.markdown("""
             <div class="analysis-complete">
                 <div class="analysis-complete-title">✔ Video Analysis Complete</div>
-                <div class="report-generated">● Gemini 2.5 Pro</div>
+                <div class="report-generated"></div>
             </div>""", unsafe_allow_html=True)
 
             if critical_v > 0:
