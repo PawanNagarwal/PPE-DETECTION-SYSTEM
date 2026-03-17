@@ -18,8 +18,8 @@ from google.genai import types
 st.set_page_config(page_title="PPE Compliance Analysis", layout="wide", page_icon="🦺")
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-gemini_client  = genai.Client(api_key=GEMINI_API_KEY)
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+gemini_client  = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 # ------------------ STYLES ------------------
 st.markdown("""
