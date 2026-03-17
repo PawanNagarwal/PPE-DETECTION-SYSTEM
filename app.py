@@ -714,7 +714,7 @@ with tab_images:
 
     with right_col:
         if analyze_btn and uploaded_files:
-            with st.spinner("🔄 GPT-4o — Detecting violations + locations..."):
+            with st.spinner("Analyzing Images..."):
                 images_data = []
                 for f in uploaded_files:
                     f.seek(0); b64, mime = encode_image(f); images_data.append((b64, mime))
