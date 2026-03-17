@@ -757,7 +757,7 @@ with tab_images:
             st.markdown("""
             <div class="analysis-complete">
                 <div class="analysis-complete-title">✔ Analysis Complete</div>
-                <div class="report-generated">● GPT-4o · Violations Marked</div>
+                <div class="report-generated">●Violations Marked</div>
             </div>""", unsafe_allow_html=True)
 
             if critical_count > 0:
