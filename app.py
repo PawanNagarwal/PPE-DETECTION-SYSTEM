@@ -916,7 +916,7 @@ with tab_video:
                 tmp_video_path = tmp.name
 
             # ── Pass 1: Gemini full video analysis ──
-            with st.spinner("🤖 Analysing video..."):
+            with st.spinner("🤖 Analyzing video..."):
                 try:
                     result_video = analyze_video_with_gemini(video_bytes, vid_context, detail_level)
                 except Exception as e:
