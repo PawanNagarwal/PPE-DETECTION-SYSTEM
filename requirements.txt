@@ -1,0 +1,8 @@
+streamlit
+openai
+Pillow
+plotly
+pandas
+google-genai
+opencv-python
+python-dotenv
